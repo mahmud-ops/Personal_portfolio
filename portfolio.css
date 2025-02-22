@@ -1,3 +1,33 @@
+*{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--spring-green);
+    font-size: 320%;
+    animation: fadeIn 5s;
+}
+.head_2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--spring-green);
+    font-size: 220%;
+    animation: fadeIn 5s;
+}
+body{
+    background-color: black;
+}
+:root {
+    --spring-green: #00ff7f;
+    --dark-spring-green: #177245;
+    --may-green: #5B9E48;
+    --bud-green: #7CBB5D;
+    --medium-spring-bud: #C9DC87;
+    --secondary-bg: rgb(37, 37, 37);
+}
+/* Nav */
 #navBar{
     display: flex;
     background-color: black;
@@ -19,5 +49,103 @@
     font-weight: bolder;
 }
 .nav-link:hover{
-    color: springgreen;
+    color: var(--bud-green);
+}
+
+
+/* Hero */
+#profile-pic{
+    display: flex;
+    justify-content: center;
+}
+#profile-pic img{
+    border-radius: 50%;
+    animation: fadeIn_2 5s;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+}
+@keyframes fadeIn {
+    0%{opacity: 0;
+    transform: translateX(-30px);}
+}
+@keyframes fadeIn_2 {
+    0%{opacity: 0;}
+}
+#description{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.719);
+    width: 70%;
+    padding: 20px;   
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+        #hero{
+            display: block;
+        }
+        #description{
+            padding: 0px;
+            transform: translateX(25%);
+        }
+    }
+
+/* Skills */
+#skill-container{
+    display: block;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--secondary-bg);
+    cursor: pointer;
+}
+.bar{
+    position: relative;
+    height: 10px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: #cadc8758;
+}
+
+#html{
+    position: absolute;
+    z-index: 2;
+    height: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--medium-spring-bud);
+}
+#css{
+    position: absolute;
+    z-index: 2;
+    height: 10px;
+    width: 93%;
+    border-radius: 10px;
+    background-color: var(--medium-spring-bud);
+}
+#js{
+    position: absolute;
+    z-index: 2;
+    height: 10px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: var(--medium-spring-bud);
+}
+#c{
+    position: absolute;
+    z-index: 2;
+    height: 10px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: var(--medium-spring-bud);
+}
+#cpp{
+    position: absolute;
+    z-index: 2;
+    height: 10px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: var(--medium-spring-bud);
 }
