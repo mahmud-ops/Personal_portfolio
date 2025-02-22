@@ -2,6 +2,7 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .head{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,14 +31,25 @@ body{
 /* Nav */
 #navBar{
     display: flex;
-    background-color: black;
     justify-content: end;
+    background-color: black;
     padding: 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+
 }
+.toggler{
+    visibility: hidden;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
 #link-container{
     width: 70%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .nav-link{
     margin-top: 10px;
@@ -81,21 +93,9 @@ body{
 }
 
 
-/* Mobile */
-@media (max-width: 768px) {
-        #hero{
-            display: block;
-        }
-        #description{
-            padding: 0px;
-            transform: translateX(25%);
-        }
-    }
-
 /* Skills */
 #skill-container{
     display: block;
-    position: relative;
     padding: 20px;
     border-radius: 10px;
     background-color: var(--secondary-bg);
@@ -108,44 +108,54 @@ body{
     border-radius: 10px;
     background-color: #cadc8758;
 }
+/* Skills */
+#html, #css, #js, #c, #cpp {
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--medium-spring-bud);
+    transition: width 2s ease-in-out; /* Ensure transition is applied here */
+}
 
-#html{
-    position: absolute;
-    z-index: 2;
-    height: 10px;
-    width: 90%;
-    border-radius: 10px;
-    background-color: var(--medium-spring-bud);
+#skill-container:hover #html { width: 95%; }
+#skill-container:hover #css { width: 97%; }
+#skill-container:hover #js { width: 25%; }
+#skill-container:hover #c { width: 70%; }
+#skill-container:hover #cpp { width: 70%; }
+/* Mobile */
+@media (max-width: 768px) {
+    .toggler{
+        visibility: visible;
+    }
+    #hero {
+        display: block;
+    }
+    #description {
+        text-align: center;
+        padding: 0px;
+        transform: translateX(25%);
+    }
+    #navBar {
+        transition: height 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        height: 10px;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    #link-container {
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nav-expanded {
+        height: 200px !important;
+    }
 }
-#css{
-    position: absolute;
-    z-index: 2;
-    height: 10px;
-    width: 93%;
-    border-radius: 10px;
-    background-color: var(--medium-spring-bud);
+
+/* Education */
+#education{
+    padding: 20px;
 }
-#js{
-    position: absolute;
-    z-index: 2;
-    height: 10px;
-    width: 20%;
-    border-radius: 10px;
-    background-color: var(--medium-spring-bud);
-}
-#c{
-    position: absolute;
-    z-index: 2;
-    height: 10px;
-    width: 70%;
-    border-radius: 10px;
-    background-color: var(--medium-spring-bud);
-}
-#cpp{
-    position: absolute;
-    z-index: 2;
-    height: 10px;
-    width: 50%;
-    border-radius: 10px;
-    background-color: var(--medium-spring-bud);
+#education li{
+    margin-bottom: 10px;
 }
