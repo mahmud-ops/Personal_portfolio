@@ -34,11 +34,9 @@ Welcome to my personal portfolio website! This is a showcase of my **skills, pro
 2. Open **index.html** in your browser  
 3. Customize the content and styles to match your personal brand  
 
-## 🌐 Live Preview  
-[**View my portfolio here**](#) _(Add your live portfolio link once hosted)_  
-
+## 🌐 Live Preview   
 ## 📬 Contact  
 Feel free to reach out to me on:  
-📧 **Email:** _Add your email here_  
+📧 **Email:** [abdullahmahmud01798@gmail.com](mailto:abdullahmahmud01798@gmail.com)
 🔗 **LinkedIn:** [www.linkedin.com/in/abdullah-al-mahmud01798](https://www.linkedin.com/in/abdullah-al-mahmud01798)  
 💻 **GitHub:** [github.com/mahmud-ops](https://github.com/mahmud-ops)  
