@@ -116,8 +116,8 @@ body{
     width: 0%;
     height: 10px;
     border-radius: 10px;
-    background-color: var(--medium-spring-bud);
-    transition: width 2s ease-in-out; /* Ensure transition is applied here */
+    background-color: var(--bud-green);
+    transition: width 0.9s ease-in-out; /* Ensure transition is applied here */
 }
 
 #skill-container:hover #html { width: 95%; }
