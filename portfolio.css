@@ -96,35 +96,39 @@ body{
 
 
 /* Skills */
-#skill-container{
+#skill-container {
     display: block;
     padding: 20px;
     border-radius: 10px;
     background-color: var(--secondary-bg);
     cursor: pointer;
 }
-.bar{
+
+.bar {
     position: relative;
     height: 10px;
     width: 95%;
     border-radius: 10px;
     background-color: #cadc8758;
 }
+
 /* Skills */
 #html, #css, #js, #c, #cpp {
     position: absolute;
-    width: 0%;
+    width: 0%; /* Initially set to 0 */
     height: 10px;
     border-radius: 10px;
     background-color: var(--bud-green);
-    transition: width 0.9s ease-in-out; /* Ensure transition is applied here */
+    transition: width 0.9s ease-in-out;
 }
 
-#skill-container:hover #html { width: 95%; }
-#skill-container:hover #css { width: 97%; }
-#skill-container:hover #js { width: 25%; }
-#skill-container:hover #c { width: 70%; }
-#skill-container:hover #cpp { width: 70%; }
+/* Active class to trigger animation */
+.skill-active #html { width: 95%; }
+.skill-active #css { width: 97%; }
+.skill-active #js { width: 25%; }
+.skill-active #c { width: 70%; }
+.skill-active #cpp { width: 70%; }
+
 /* Mobile */
 @media (max-width: 768px) {
     .toggler{
