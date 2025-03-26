@@ -241,3 +241,13 @@ body{
 .git{
     left: 5px;
 }
+
+.graphics-container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.design{
+    width: 400px;
+    border-radius: 10px;
+}
