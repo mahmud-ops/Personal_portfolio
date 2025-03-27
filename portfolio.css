@@ -2,6 +2,9 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; }
+
 
 .head{
     text-align: center;
@@ -250,4 +253,34 @@ body{
 .design{
     width: 400px;
     border-radius: 10px;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--spring-green) !important; /* Change arrow button color */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: var(--dark-spring-green) !important; /* Darker shade on hover */
 }

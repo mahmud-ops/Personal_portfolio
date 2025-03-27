@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
     <!-- Navigation bar -->
@@ -46,30 +48,27 @@
         </div>
      </div>
      <h2 class="head_2">Graphics design projects</h2>
-     <div class="graphics-container">
-        <a target="_blank" href="Images/Graphics/Aiya card mockup.png">
-            <div class="img-container"><img src="Images/Graphics/Aiya card mockup.png" alt="" class="design"></div>
-        </a>
-        <a target="_blank" href="Images/Graphics/Competition breakdown.png">
-            <div class="img-container"><img src="Images/Graphics/Competition breakdown.png" alt="" class="design"></div>
-        </a>
-        <a target="_blank" href="Images/Graphics/cse banner final.png">
-            <div class="img-container"><img src="Images/Graphics/cse banner final.png" alt="" class="design"></div>
-        </a>
-        <a target="_blank" href="Images/Graphics/portfolio-mockup-phone.png">
-            <div class="img-container"><img src="Images/Graphics/portfolio-mockup-phone.png" alt="" class="design"></div>
-        </a>
-        <a target="_blank" href="Images/Graphics/Purple Space Quote Desktop Wallaper.png">
-            <div class="img-container"><img src="Images/Graphics/Purple Space Quote Desktop Wallaper.png" alt="" class="design"></div>
-        </a>
-        <a target="_blank" href="Images/Graphics/Registration link poster.png">
-            <div class="img-container"><img src="Images/Graphics/Registration link poster.png" alt="" class="design"></div>
-        </a>
-        <a target="_blank" href="Images/Graphics/Rule book cover.png">
-            <div class="img-container"><img src="Images/Graphics/Rule book cover.png" alt="" class="design"></div>
-        </a>
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a target="_blank" href="Images/Graphics/Aiya card mockup.png"><img src="Images/Graphics/Aiya card mockup.png" alt=""></a></div>
+            <div class="swiper-slide"><a target="_blank" href="Images/Graphics/Competition breakdown.png"><img src="Images/Graphics/Competition breakdown.png" alt=""></a></div>
+            <div class="swiper-slide"><a target="_blank" href="Images/Graphics/cse banner final.png"><img src="Images/Graphics/cse banner final.png" alt=""></a></div>
+            <div class="swiper-slide"><a target="_blank" href="Images/Graphics/portfolio-mockup-phone.png"><img src="Images/Graphics/portfolio-mockup-phone.png" alt=""></a></div>
+            <div class="swiper-slide"><a target="_blank" href="Images/Graphics/Purple Space Quote Desktop Wallaper.png"><img src="Images/Graphics/Purple Space Quote Desktop Wallaper.png" alt=""></a></div>
+            <div class="swiper-slide"><a target="_blank" href="Images/Graphics/Registration link poster.png"><img src="Images/Graphics/Registration link poster.png" alt=""></a></div>
+            <div class="swiper-slide"><a target="_blank" href="Images/Graphics/Rule book cover.png"><img src="Images/Graphics/Rule book cover.png" alt=""></a></div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
-    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <script src="portfolio.js"></script> 
 </body>
